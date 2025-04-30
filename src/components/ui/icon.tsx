@@ -1,9 +1,10 @@
 import React from 'react';
 import * as LucideIcons from 'lucide-react';
-import { LucideProps } from 'lucide-react';
 
-interface IconProps extends LucideProps {
-  name: string;
+import { LucideProps, icons } from "lucide-react";
+
+export type IconName = keyof typeof icons;
+
   fallback?: string;
 }
 
